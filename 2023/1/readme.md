@@ -1,6 +1,6 @@
 # Day 1
 
-The problem was easy to understand and the input was enough to detect all corner cases.
+My notes on Advent of Code - Day 1: [Trebuchet?!](https://adventofcode.com/2023/day/1)
 
 ## Part 1
 
@@ -24,5 +24,7 @@ I remember discovering about greedyness and ungreedyness in regexps around the y
 In all this time I have never really understood it. I just know that it's usually the solution to my problems.
 
 ## Conclusion
+
+The problem was easy to understand and the input was enough to detect all corner cases.
 
 Nice introduction to this year's event. I like the story :)

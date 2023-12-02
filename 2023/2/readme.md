@@ -1,6 +1,6 @@
 # Day 2
 
-I don't think the problem is that hard, but I did it in the morning and I obviously didn't read the description correctly.
+My notes on Advent of Code - Day 2: [Cube Conundrum](https://adventofcode.com/2023/day/2)
 
 ## Part 1
 
