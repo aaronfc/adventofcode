@@ -1,5 +1,6 @@
 <?php
 
+// Parse the game data into a friendlier structure.
 function parse_game_data( $game_data ) {
 	$output = [];
 	$plays = explode(';', trim($game_data));
@@ -19,6 +20,7 @@ function parse_game_data( $game_data ) {
 	return $output;
 }
 
+// Read input and parse into `$games` array.
 $games = array_map(
 	function( $line ) {
 		$game = [];
@@ -30,10 +32,10 @@ $games = array_map(
 	file('input.txt')
 );
 
-$limits = [ 'red' => 12, 'green' => 13, 'blue' => 14 ];
-
+// Calculate answer.
 $answer = 0;
 foreach( $games as $game ) {
+	// Get max number at any play for each color.
 	$max = [];
 	foreach( $game['plays'] as $play ) {
 		foreach( $play as $color => $amount) {
@@ -42,9 +44,11 @@ foreach( $games as $game ) {
 			}
 		}
 	}
+	// Calculate power: multiply all numbers from a set.
 	$power = array_reduce($max, function($carry, $item) {
 		return $carry * $item;
 	}, 1);
+
 	$answer += $power;
 }
 

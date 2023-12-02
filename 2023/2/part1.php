@@ -1,5 +1,6 @@
 <?php
 
+// Parse the game data into a friendlier structure.
 function parse_game_data( $game_data ) {
 	$output = [];
 	$plays = explode(';', trim($game_data));
@@ -19,6 +20,7 @@ function parse_game_data( $game_data ) {
 	return $output;
 }
 
+// Read input and parse into `$games` array.
 $games = array_map(
 	function( $line ) {
 		$game = [];
@@ -30,11 +32,14 @@ $games = array_map(
 	file('input.txt')
 );
 
+// Maximum cubes for each color.
 $limits = [ 'red' => 12, 'green' => 13, 'blue' => 14 ];
 
+// Calculate answer.
 $answer = 0;
 foreach( $games as $game ) {
 	foreach( $game['plays'] as $play ) {
+		// A game is invalid if color doesn't exist or if the amount is greater than the limit.
 		$is_valid = true;
 		foreach( $play as $color => $amount) {
 			if ( !isset($limits[$color]) ) {
@@ -50,9 +55,6 @@ foreach( $games as $game ) {
 	if ( $is_valid ) {
 		$answer += $game['id'];
 	}
-	echo 'Game ', $game['id'], ' is ' . ( $is_valid ? 'valid' : 'invalid' ) . PHP_EOL;
-	echo json_encode($limits), PHP_EOL;
-	echo json_encode($game['plays']), PHP_EOL;
 }
 
 echo $answer, PHP_EOL;
