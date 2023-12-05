@@ -1,6 +1,6 @@
 # Day 3
 
-My notes on Advent of Code - Day 2: [Gear Ratios](https://adventofcode.com/2023/day/3)
+My notes on Advent of Code - Day 3: [Gear Ratios](https://adventofcode.com/2023/day/3)
 
 ## Part 1
 

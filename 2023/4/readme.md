@@ -1,6 +1,6 @@
 # Day 4
 
-My notes on Advent of Code - Day 2: [Scratchcards](https://adventofcode.com/2023/day/4)
+My notes on Advent of Code - Day 4: [Scratchcards](https://adventofcode.com/2023/day/4)
 
 ## Part 1
 
