@@ -1,4 +1,4 @@
-# Aarón Fas solutions for Advent of Code
+# My Advent of Code journey
 
 My solutions for Advent of Code events.
 
