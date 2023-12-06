@@ -1,5 +1,9 @@
 # Advent of Code (2023)
 
-![under construction](http://www.textfiles.com/underconstruction/Dungeon8807construction.gif)
+<p align="center">
+  <img src="http://www.textfiles.com/underconstruction/Dungeon8807construction.gif"/><br/>
+</p>
 
-![work in progress](http://www.textfiles.com/underconstruction/CaCapeCanaveralHangar2256construction.gif)
+<img src="http://www.textfiles.com/underconstruction/CaCapeCanaveralHangar2256construction.gif"/>
+
+Images from http://www.textfiles.com/underconstruction/
